@@ -20,11 +20,23 @@
     {% if page.css %}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" media="screen, projection" />{% endif %}
   </head>
   <body>
-    <header>
-      <h1><a href="/">Jekyll Base</a></h1>
-    </header>
-    <section>
-      {{ content }}
-    </section>
+    <div class="container">
+        <div class="hero-unit">
+            <h1>Codegrove</h1>
+            <p id="motto">Conclave of contankerous tinkerers</p>
+
+            <ul id="navi">
+                <li class="selected"><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+        </div>
+
+        {{ content }}
+
+        <footer>
+            <p>&copy; Codegrove 2011</p>
+        </footer>
+    </div>
   </body>
 </html>
