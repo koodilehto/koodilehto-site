@@ -1,0 +1,85 @@
+body {
+    background: grey;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background-image: url("http://www.sharecg.com/images/medium/355.jpg"); /* http://www.sharecg.com/v/445/gallery/6/Texture/Seamless-old-concrete */
+}
+
+body > .container {
+    -moz-box-shadow: 3px 3px 10px #888;
+    -webkit-box-shadow: 3px 3px 10px #888;
+    box-shadow: 3px 3px 10px #666;
+
+    padding: 1.5em;
+    background: white;
+    background-image: url("http://2.bp.blogspot.com/_q2DyIrP9k3M/SwsFqElMMBI/AAAAAAAABgY/3WMzmBY5loI/s1600/386_tile_WatercolorPaper.jpg"); /* http://zooboingreview.blogspot.com/2009/11/free-seamless-texture-watercolor-paper.html */
+}
+
+body > .container {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.hero-unit {
+    margin: -1.5em;
+    margin-bottom: 1em;
+    padding-bottom: 0em;
+    -moz-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+}
+
+footer {
+    background: #111;
+    margin: -1.5em;
+    margin-top: 1em;
+    padding: 1em;
+    -moz-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+    color: #ccc;
+}
+
+#navi {
+    width: 100%;
+    padding: 0.5em 6.8em 0.5em 0em;
+    margin: 0 0 0 -3.4em;
+    background: #111;
+    list-style: none;
+    font-size: large;
+}
+
+#navi .selected {
+    font-weight: bold;
+}
+
+#navi li {
+    background: #111;
+    padding: 0em 2em 0em 2em;
+    display: inline;
+    border-right: 1px solid;
+}
+
+#navi li:last-child {
+    border-right: none;
+}
+
+#navi li a {
+    color: #ccc;
+}
+
+h1, h2, #navi li {
+    font-family: 'Marmelad', cursive;
+    font-weight: 400;
+}
+
+#motto {
+    padding-left: 1em;
+}
+
+p {
+    font-family: Verdana;
+}
+
+.hero-unit {
+    background-image: url("http://farm6.staticflickr.com/5142/5775145089_06f073a739_b.jpg");
+}
+
