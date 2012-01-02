@@ -12,7 +12,7 @@ body > .container {
 
     padding: 1.5em;
     background: white;
-    background-image: url("http://2.bp.blogspot.com/_q2DyIrP9k3M/SwsFqElMMBI/AAAAAAAABgY/3WMzmBY5loI/s1600/386_tile_WatercolorPaper.jpg"); /* http://zooboingreview.blogspot.com/2009/11/free-seamless-texture-watercolor-paper.html */
+    background-image: url("../images/paper.jpg"); /* http://zooboingreview.blogspot.com/2009/11/free-seamless-texture-watercolor-paper.html */
 }
 
 body > .container {
@@ -80,6 +80,6 @@ p {
 }
 
 .hero-unit {
-    background-image: url("http://farm6.staticflickr.com/5142/5775145089_06f073a739_b.jpg");
+    background-image: url("../images/grove.jpg");
 }
 

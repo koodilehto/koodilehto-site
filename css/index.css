@@ -6,7 +6,7 @@
     width: 31px;
     height: 31px;
     text-indent: -999999px;
-    background: url(http://bxslider.com/sites/all/themes/bx/images/icon_arrow_left.png) no-repeat 0 -31px; /* TODO: remove alpha from arrow inside */
+    background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
 }
 
 .bx-wrapper .bx-next {
@@ -16,7 +16,7 @@
     width: 31px;
     height: 31px;
     text-indent: -999999px;
-    background: url(http://bxslider.com/sites/all/themes/bx/images/icon_arrow_right.png) no-repeat 0 -31px; /* TODO: remove alpha from arrow inside */
+    background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
 }
 
 .bx-wrapper .bx-next:hover,
@@ -121,7 +121,7 @@
     right: -15px;
     width: 30px;
     height: 30px;
-    background: transparent url(http://fancybox.net/js/fancybox-1.3.4/fancybox.png) -40px 0px;
+    background: transparent url(../images/icons.png) -40px 0px; /* fancybox */
 }
 
 .close:hover {
