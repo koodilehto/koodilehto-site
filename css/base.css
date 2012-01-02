@@ -2,7 +2,7 @@ body {
     background: grey;
     margin-bottom: 2em;
     margin-top: 2em;
-    background-image: url("http://www.sharecg.com/images/medium/355.jpg"); /* http://www.sharecg.com/v/445/gallery/6/Texture/Seamless-old-concrete */
+    background-image: url("/images/concrete.jpg"); /* http://www.sharecg.com/v/445/gallery/6/Texture/Seamless-old-concrete */
 }
 
 body > .container {
