@@ -16,6 +16,10 @@
     height: 31px;
 }
 
+.icon {
+    cursor: pointer;
+}
+
 /* widgets */
 #news dd, #tweets dd {
     margin-bottom: 0.5em;
