@@ -9,7 +9,7 @@ $(function() {
   
     urlWidget($('#news'), feeds, amountOfRSS);
     twitterWidget($('#tweets'), twitterUsers, amountOfTweets);
-    $('#projects').bxSlider();
+    $('#projects').caro();
   
       var showPolaroid = function() {
         var $elem = $(this);

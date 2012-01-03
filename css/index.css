@@ -1,31 +1,19 @@
 /* carousel */
-.bx-wrapper .bx-prev {
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    width: 31px;
-    height: 31px;
-    text-indent: -999999px;
+.left.icon {
+    float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
+    padding-right: 0.5em;
 }
 
-.bx-wrapper .bx-next {
-    position: absolute;
-    top: 5px;
-    right: 0px;
+.right.icon {
+    float: right;
+    background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
+    padding-left: 0.5em;
+}
+
+.left.icon, .right.icon {
     width: 31px;
     height: 31px;
-    text-indent: -999999px;
-    background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
-}
-
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-prev:hover {
-    background-position: 0 0;
-}
-
-.bx-window {
-    padding-left: 1em;
 }
 
 /* widgets */
