@@ -1,23 +1,28 @@
 /* carousel */
-.left.icon {
+#projects .left.button {
     float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
     padding-right: 0.5em;
 }
 
-.right.icon {
+#projects .right.button {
     float: right;
     background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
     padding-left: 0.5em;
 }
 
-.left.icon, .right.icon {
+#projects .button {
     width: 31px;
     height: 31px;
+    cursor: pointer;
 }
 
-.icon {
-    cursor: pointer;
+#projects .navi {
+    text-align: center;
+}
+
+#projects .navi .button {
+    margin-left: 1em;
 }
 
 /* widgets */

@@ -6,12 +6,12 @@
     var delay = opts.delay;
     var pos = 0;
     var amount = $slides.length;
-    var max = amount * 100;
+    var $navi = $elem.find('.navi');
 
     $slideContainer.css('overflow', 'hidden');
     $wrapper.css({
       position: 'relative',
-      width: max + '%'
+      width: (amount * 100) + '%'
     });
 
     $slides.each(function(i, e) {
@@ -22,26 +22,41 @@
       });
     });
     
+    function move() {
+      $wrapper.animate({left: (pos * 100) + '%'}, delay);
+    }
+    
     $elem.find('.left').on('click', function() {
-      pos += 100;
+      pos++;
       
       if(pos > 0) {
         pos = 0;
       }
       else {
-        $wrapper.animate({left: pos + '%'}, delay);
+        move();
       }
     });
     
     $elem.find('.right').on('click', function() {
-      pos -= 100;
+      pos--;
       
-      if(pos <= -max) {
-        pos = -max + 100;
+      if(pos <= -amount) {
+        pos = -amount + 1;
       }
       else {
-        $wrapper.animate({left: pos + '%'}, delay);
+        move();
       }
+    });
+
+    function moveTo(i) {
+      pos = pos - (i + pos);
+      move();
+    }
+    
+    $pages = $slides.each(function(i, k) {
+      $('<div>').css('display', 'inline').text(i + 1).on('click', function() {
+        moveTo(i);
+      }).appendTo($navi).addClass('button');
     });
   }
   
