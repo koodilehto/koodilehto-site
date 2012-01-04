@@ -25,6 +25,10 @@
     margin-left: 1em;
 }
 
+#projects .navi .selected.button {
+    font-weight: bold;
+}
+
 /* widgets */
 #news dd, #tweets dd {
     margin-bottom: 0.5em;
