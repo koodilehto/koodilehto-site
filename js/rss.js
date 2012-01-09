@@ -25,13 +25,14 @@ define(['jquery', 'utils'], function($, utils) {
         });
     }
 
-    function orderRSSEntries(data, amount) {
+    function orderRSSEntries(data, amount, postsPerFeed) {
+        postsPerFeed = postsPerFeed || 1;
         var entries = [];
 
         $.each(data, function(i, k) {
             var author = k.author;
 
-            entries = entries.concat(k.entries.slice(0, 7));
+            entries = entries.concat(k.entries.slice(0, postsPerFeed));
  
             $.each(entries, function(i, k) {
                 k.author = k.author || author;
