@@ -1,2 +1,2 @@
-jekyll --serve
+jekyll --auto --serve
 
