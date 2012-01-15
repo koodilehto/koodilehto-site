@@ -1,11 +1,11 @@
 /* carousel */
-#projects .left.button {
+#projects .prev.button {
     float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
     padding-right: 0.5em;
 }
 
-#projects .right.button {
+#projects .next.button {
     float: right;
     background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
     padding-left: 0.5em;
