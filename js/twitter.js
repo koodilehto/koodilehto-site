@@ -71,7 +71,7 @@ define(['jquery', 'utils'], function($, utils) {
 
         $.each(entries, function(i, k) {
             $('<dt>').append('<span class="date">' + utils.ISODateString(k.publishedDate) + '</span>').
-                append('<span class="author">' + k.author + '</span>').appendTo($dl);
+                append('<span class="author"><a href="https://twitter.com/#!/' + k.author + '">' + k.author  + '</a></span>').appendTo($dl);
             $('<dd>').append('<span class="title">' + k.text + '</span>').appendTo($dl);
         });
     }
