@@ -45,11 +45,6 @@ define(function() {
             catch(e) {}
 
             return target.getItem(k);
-        },
-        linkify: function(text) {
-            return text.replace(/(href="|<a.*?>)?[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/g, function($0, $1) {
-                return $1 ? $0 : $0.link($0);
-            });
         }
     };
 });

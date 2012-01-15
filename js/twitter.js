@@ -47,8 +47,8 @@ define(['jquery', 'utils'], function($, utils) {
 
             $.each(tweets, function(i, k) {
                 ret.push({
-                    author: user,
-                    text: utils.linkify(k.text),
+                    author: k.user.screen_name,
+                    text: twitterlib.ify.clean(twitterlib.expandLinks(k)),
                     publishedDate: k.created_at
                 });
             });
