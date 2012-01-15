@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Codegrove - {{ page.title }}</title>
+    <title>{{ site.name }} - {{ page.title }}</title>
 
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
   <body>
     <div class="container">
         <div class="hero-unit">
-            <h1>Codegrove</h1>
+            <h1>{{ site.name }}</h1>
             <p id="motto">Conclave of contankerous tinkerers</p>
 
             <ul id="navi">
@@ -35,7 +35,7 @@
         {{ content }}
 
         <footer>
-            <p>&copy; Codegrove 2011</p>
+            <p>&copy; {{ site.name }} 2012</p>
         </footer>
     </div>
   </body>
