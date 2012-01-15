@@ -23,9 +23,20 @@ body > .container {
 .hero-unit {
     margin: -1.5em;
     margin-bottom: 1em;
-    padding-bottom: 0em;
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
+    background-image: url("../images/grove.jpg");
+}
+
+.hero-unit h1 {
+    padding-top: 1.5em;
+    padding-left: 7.5%;
+}
+
+#motto {
+    padding-top: 0.5em;
+    padding-left: 7.5%;
+    padding-bottom: 0.5em;
 }
 
 footer {
@@ -40,8 +51,8 @@ footer {
 
 #navi {
     width: 100%;
-    padding: 0.5em 6.8em 0.5em 0em;
-    margin: 0 0 0 -3.4em;
+    padding: 0.5em 0em 0.5em 0em;
+    margin: 0;
     background: #111;
     list-style: none;
     font-size: large;
@@ -71,15 +82,7 @@ h1, h2, #navi li {
     font-weight: 400;
 }
 
-#motto {
-    padding-left: 1em;
-}
-
 p {
     font-family: Verdana;
-}
-
-.hero-unit {
-    background-image: url("../images/grove.jpg");
 }
 
