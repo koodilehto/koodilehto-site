@@ -86,3 +86,7 @@ p {
     font-family: Verdana;
 }
 
+footer .contact {
+    float: right;
+}
+
