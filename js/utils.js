@@ -27,7 +27,7 @@ define(function() {
         },
         attr: function(k, v) {
             // http://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage
-            var target = sessionStorage;
+            var target = localStorage;
 
             if(!target) {
                 return null; // no support for localStorage :(
