@@ -27,8 +27,8 @@
 
             <ul id="navi">
                 <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="{% if page.url != 'index.html' %}../{% else %}index.html{% endif %}">Home</a></li>
-                <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="/projects">Projects</a></li>
-                <li {% if page.url == '/members/index.html' %}class="selected"{% endif %}><a href="/members">Members</a></li>
+                <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="{% if page.url != 'index.html' %}../{% endif %}projects">Projects</a></li>
+                <li {% if page.url == '/members/index.html' %}class="selected"{% endif %}><a href="{% if page.url != 'index.html' %}../{% endif %}members">Members</a></li>
             </ul>
         </div>
 
