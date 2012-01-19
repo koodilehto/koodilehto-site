@@ -8,5 +8,12 @@ require(['jquery', 'utils', 'rss', 'twitter', 'jquery.caro'], function($, utils,
         utils.pick($('#motto'), mottos);
         rss.widget($('#news'), feeds, 5);
         twitter.widget($('#tweets'), twitterUsers, 5);
+
+        /* bg pan test
+        $('.hero-unit').on('mousemove', function(e) {
+            var y = e.pageY - this.offsetTop;
+
+            $(this).css('background-position-y', -y + 'px');
+        });*/
     });
 });
