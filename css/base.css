@@ -29,6 +29,7 @@ body > .container {
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
     background-image: url("../images/grove.jpg");
+    background-position: 0px -53px;
 }
 
 .hero-unit h1 {
@@ -58,6 +59,10 @@ footer {
     background: #111;
     list-style: none;
     font-size: large;
+}
+
+#navi, footer {
+    opacity: 0.9;
 }
 
 #navi .selected {
