@@ -52,7 +52,13 @@
 
 .polaroid:hover {
     -webkit-transition: -webkit-transform .15s linear;
+}
+
+.polaroid:hover, .selected.polaroid {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
+    -moz-box-shadow: 3px 3px 3px #888;
+    -webkit-box-shadow: 3px 3px 3px #888;
+    box-shadow: 3px 3px 3px #888;
 }
 
