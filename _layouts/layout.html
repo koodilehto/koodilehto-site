@@ -35,7 +35,7 @@
         {{ content }}
 
         <footer>
-            <span>&copy; {{ site.name }} 2012</span>
+            <span>&copy; {{ site.name }} {{ 'now' | date: "%Y" }}</span>
             <span class="contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}</span>
         </footer>
     </div>
