@@ -1,3 +1,8 @@
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+    padding-left: 1em;
+    margin-right: -2.5em;
+}
+
 body {
     background: gray;
     margin-bottom: 2em;
@@ -10,7 +15,6 @@ body > .container {
     -webkit-box-shadow: 3px 3px 10px #888;
     box-shadow: 3px 3px 10px #666;
 
-    padding: 1.5em;
     background: white;
     background-image: url("../images/paper.jpg"); /* http://www.flickr.com/photos/zooboing/4182512221/ */
 }
@@ -21,7 +25,6 @@ body > .container {
 }
 
 .hero-unit {
-    margin: -1.5em;
     margin-bottom: 1em;
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
@@ -41,7 +44,6 @@ body > .container {
 
 footer {
     background: #111;
-    margin: -1.5em;
     margin-top: 1em;
     padding: 1em;
     -moz-border-radius: 0 0 15px 15px;
