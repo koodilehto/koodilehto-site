@@ -1,12 +1,14 @@
 require(['jquery'], function($) {
     $(function() {
-        var firstDescription = $('.polaroid:first .description').text();
+        var firstDescription = $('.polaroid:first .description').html();
 
-        $('#info').text(firstDescription);
-        $('.polaroid').hover(function() {
-            var desc = $('.description', this).text();
+        $('#info').html(firstDescription);
+        var cb = function() {
+            var desc = $('.description', this).html();
 
-            $('#info').text(desc);
-        });
+            $('#info').html(desc);
+        };
+
+        $('.polaroid').hover(cb).on('click', cb);
     });
 });
