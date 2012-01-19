@@ -1,10 +1,9 @@
-/* polaroids */
 .polaroid {
     float: left;
     width: 100px;
 }
 
-.polaroid, .fullPolaroid {
+.polaroid {
     margin: 1em;
     padding: 1%;
     -moz-box-shadow: 3px 3px 10px #888;
@@ -34,12 +33,12 @@
     -ms-transform:rotate(5deg);
 }
 
-.polaroid img, .fullPolaroid img {
+.polaroid img {
     max-height: 100%;
     max-width: 100%;
 }
 
-.polaroid .description, .fullPolaroid .description {
+.polaroid .name {
     margin: 0.5em;
     margin-bottom: 0em;
     font-family: 'Arial';
@@ -47,11 +46,11 @@
     text-align: center;
 }
 
-.polaroid .longDescription, .fullPolaroid .longDescription {
+.polaroid .description {
     display: none;
 }
 
-.animated:hover {
+.polaroid:hover {
     -webkit-transition: -webkit-transform .15s linear;
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
