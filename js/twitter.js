@@ -1,68 +1,64 @@
 define(['jquery', 'utils'], function($, utils) {
     function widget($parent, users, amount) {
+        var cache = utils.attr('tweetCache');
         var parsedData = [];
         var found = 0;
+        var exec = true;
 
-        $.each(users, function(i, user) {
-            getLatestTweets(user, 3, function(data) {
-                parsedData = parsedData.concat(data);
-                found++;
-      
-                if(found == users.length) {
-                    var entries = utils.orderEntries(parsedData, amount);
-                    constructTweetUI($parent, entries);
-                }
-            });
-        });
-    }
+        if(cache) {
+            var diff = new Date().getHours() - new Date(cache.time);
 
-    function getLatestTweets(user, limit, doneCb) {
-        var count = 0;
-        var tweetCache = utils.attr('tweetCache');
-        var now = new Date();
-
-        if(tweetCache) {
-            if(new Date(now - new Date(tweetCache.time)).getHours() < 1) {
-                var tweets = tweetCache.tweets;
-
-                tweets = $.map(tweets, function(k, i) {
+            if(diff < 1) {
+                var entries = $.map(cache.entries, function(k, i) {
                     k.publishedDate = new Date(k.publishedDate);
 
                     return k;
                 });
 
-                doneCb(tweets);
-
-                return;
+                constructTweetUI($parent, entries);
+                exec = false;
             }
         }
         else {
-            tweetCache = {
-                time: now.getTime()
+            cache = {
+                time: new Date().getTime()
             };
         }
 
-        twitterlib.timeline(user, { limit: limit }, function(tweets) {
-            var ret = [];
+        if(exec) {
+            $.each(users, function(i, user) {
+                getLatestTweets(user, 3, function(data) {
+                    parsedData = parsedData.concat(data);
+                    found++;
 
-            $.each(tweets, function(i, k) {
-                ret.push({
-                    author: k.user.screen_name,
-                    text: twitterlib.ify.clean(twitterlib.expandLinks(k)),
-                    publishedDate: k.created_at
+                    if(found == users.length) {    
+                        var entries = utils.orderEntries(parsedData, amount);
+
+                        constructTweetUI($parent, entries);
+
+                        cache.entries = $.map(entries, function(k, i) {
+                            k.publishedDate = k.publishedDate.getTime();
+
+                            return k;
+                        });
+                        utils.attr('tweetCache', cache);
+                    }
                 });
             });
+        }
+    }
 
-            tweetCache.tweets = ret;
-            utils.attr('tweetCache', tweetCache);
+    function getLatestTweets(user, limit, doneCb) {
+        var count = 0;
 
-            ret = $.map(ret, function(k, i) {
-                k.publishedDate = new Date(k.publishedDate);
-
-                return k;
-            });
-
-            doneCb(ret);
+        twitterlib.timeline(user, { limit: limit }, function(tweets) {
+            doneCb($.map(tweets, function(k, i) {
+                return {
+                    author: k.user.screen_name,
+                    text: twitterlib.ify.clean(twitterlib.expandLinks(k)),
+                    publishedDate: new Date(k.created_at)
+                };
+            }));
         });
     }
 
