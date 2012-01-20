@@ -9,15 +9,16 @@ require(['jquery'], function($) {
         $('.polaroid .description').hide();
 
         $('#info').html($firstDescription.html());
-        var cb = function() {
+
+        $('.polaroid').on('click', updateDescription);
+
+        function updateDescription() {
             var $desc = $('.description', this);
 
             $('#info').html($desc.html());
 
             $('.polaroid').removeClass('selected');
             $(this).addClass('selected');
-        };
-
-        $('.polaroid').hover(cb).on('click', cb);
+        }
     });
 });
