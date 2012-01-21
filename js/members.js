@@ -1,6 +1,7 @@
 require(['jquery'], function($) {
     $(function() {
-        var $firstPolaroid = $('.polaroid:first');
+        var personId = window.location.hash;
+        var $firstPolaroid = $(personId).length > 0? $(personId): $('.polaroid:first');
         var $firstDescription = $('.description', $firstPolaroid);
 
         $firstPolaroid.addClass('selected');
