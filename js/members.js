@@ -1,4 +1,4 @@
-require(['jquery'], function($) {
+require(['jquery', 'jquery.hashchange'], function($) {
     $(function() {
 
         // opera hack to make sure descriptions keep hidden (use css instead?)
@@ -10,7 +10,6 @@ require(['jquery'], function($) {
             window.location.hash = '/' + $(this).attr("id");
         });
 
-        // TODO: Might want to add http://benalman.com/projects/jquery-hashchange-plugin/
         $(window).bind('hashchange', function() {
             var personId = window.location.hash.replace('/', '');
             var $polaroid = $(personId).length > 0? $(personId): $('.polaroid:first');
