@@ -82,8 +82,12 @@ footer {
     font-size: large;
 }
 
-.navi, footer {
-    opacity: 0.9;
+.navi {
+    opacity: 0.8;
+}
+
+.subnavi {
+    opacity: 1.0;
 }
 
 .navi .selected {
