@@ -1,34 +1,3 @@
-#projects .prev.button {
-    float: left;
-    background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
-    padding-right: 0.5em;
-}
-
-#projects .next.button {
-    float: right;
-    background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
-    padding-left: 0.5em;
-}
-
-#projects .button {
-    width: 31px;
-    height: 31px;
-    cursor: pointer;
-}
-
-#projects .carouselNavi {
-    text-align: center;
-}
-
-#projects .carouselNavi .button {
-    margin-left: 1em;
-}
-
-#projects .carouselNavi .selected.button {
-    font-weight: bold;
-}
-
-/* widgets */
 #news dd, #tweets dd {
     margin-bottom: 0.5em;
 }

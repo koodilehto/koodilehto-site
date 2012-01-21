@@ -1,0 +1,34 @@
+.caro {
+    margin: 0.5em;
+}
+
+.caro .prev.button {
+    float: left;
+    background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
+    padding-right: 0.5em;
+}
+
+.caro .next.button {
+    float: right;
+    background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
+    padding-left: 0.5em;
+}
+
+.caro .button {
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+
+.caro .carouselNavi {
+    text-align: center;
+}
+
+.caro .carouselNavi .button {
+    margin-left: 1em;
+}
+
+.caro .carouselNavi .selected.button {
+    font-weight: bold;
+}
+

@@ -1,6 +1,23 @@
+/* TODO: figure out if it's possible to eliminate these two somehow */
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
     padding-left: 1em;
     margin-right: -2.5em;
+}
+
+.span12 {
+    width: 95%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.figure {
+    margin: 0.5em;
 }
 
 body {
@@ -35,6 +52,10 @@ body > .container {
 .hero-unit h1 {
     padding-top: 1.5em;
     padding-left: 7.5%;
+}
+
+.teaser {
+    font-weight: bold;
 }
 
 #motto {
