@@ -1,9 +1,3 @@
-@media (max-width: 768px) {
-    .container {
-        padding: 0;
-    }
-}
-
 /* TODO: figure out if it's possible to eliminate these two somehow */
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
     padding-left: 1em;
@@ -126,5 +120,15 @@ p {
 
 footer .contact {
     float: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+    }
 }
 
