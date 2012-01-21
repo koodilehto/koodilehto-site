@@ -20,7 +20,7 @@ define(['jquery', 'utils'], function($, utils) {
             url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
             dataType: 'json',
             success: function(data) {
-                callback(data.responseData.feed);
+                callback(data.responseData? data.responseData.feed: {author: null, entries: []});
             }
         });
     }
