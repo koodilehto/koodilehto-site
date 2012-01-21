@@ -1,4 +1,3 @@
-/* carousel */
 #projects .prev.button {
     float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
@@ -17,15 +16,15 @@
     cursor: pointer;
 }
 
-#projects .navi {
+#projects .carouselNavi {
     text-align: center;
 }
 
-#projects .navi .button {
+#projects .carouselNavi .button {
     margin-left: 1em;
 }
 
-#projects .navi .selected.button {
+#projects .carouselNavi .selected.button {
     font-weight: bold;
 }
 

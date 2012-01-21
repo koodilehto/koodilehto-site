@@ -52,7 +52,7 @@ footer {
     color: #ccc;
 }
 
-#navi {
+.navi {
     width: 100%;
     padding: 0.5em 0em 0.5em 0em;
     margin: 0;
@@ -61,30 +61,30 @@ footer {
     font-size: large;
 }
 
-#navi, footer {
+.navi, footer {
     opacity: 0.9;
 }
 
-#navi .selected {
+.navi .selected {
     font-weight: bold;
 }
 
-#navi li {
+.navi li {
     background: #111;
     padding: 0em 2em 0em 2em;
     display: inline;
     border-right: 1px solid;
 }
 
-#navi li:last-child {
+.navi li:last-child {
     border-right: none;
 }
 
-#navi li a {
+.navi li a {
     color: #ccc;
 }
 
-h1, h2, #navi li {
+h1, h2, .navi li {
     font-family: 'Marmelad', cursive;
     font-weight: 400;
 }

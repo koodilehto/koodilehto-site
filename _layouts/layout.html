@@ -25,11 +25,13 @@
             <h1>{{ site.name }}</h1>
             <p id="motto">Conclave of contankerous tinkerers</p>
 
-            <ul id="navi">
+            <ul class="navi">
                 <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="{% if page.url != '/index.html' %}../{% else %}index.html{% endif %}">Home</a></li>
                 <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="{% if page.url != '/index.html' %}../{% endif %}projects">Projects</a></li>
                 <li {% if page.url == '/members/index.html' %}class="selected"{% endif %}><a href="{% if page.url != '/index.html' %}../{% endif %}members">Members</a></li>
             </ul>
+
+            {{ page.extraNavi }}
         </div>
 
         {{ content }}
