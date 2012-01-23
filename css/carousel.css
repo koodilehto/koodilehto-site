@@ -32,3 +32,8 @@
     font-weight: bold;
 }
 
+.caro p, .caro h3 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
