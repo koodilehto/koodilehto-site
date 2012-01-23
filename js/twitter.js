@@ -6,7 +6,8 @@ define(['jquery', 'utils'], function($, utils) {
         var exec = true;
 
         if(cache) {
-            var diff = new Date().getHours() - new Date(cache.time);
+            var hour = 1000 * 60 * 60;
+            var diff = (new Date().getTime() - cache.time) / hour;
 
             if(diff < 1) {
                 var entries = $.map(cache.entries, function(k, i) {
@@ -19,13 +20,12 @@ define(['jquery', 'utils'], function($, utils) {
                 exec = false;
             }
         }
-        else {
+
+        if(exec) {
             cache = {
                 time: new Date().getTime()
             };
-        }
 
-        if(exec) {
             $.each(users, function(i, user) {
                 getLatestTweets(user, 3, function(data) {
                     parsedData = parsedData.concat(data);
