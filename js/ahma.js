@@ -1,4 +1,4 @@
-require(['jquery', 'utils', 'rss', 'twitter', 'jquery.caro'], function($) {
+require(['jquery', 'jquery.caro'], function($) {
     $(function() {
         $('#gallery').caro({naviClass: 'carouselNavi'});
     });
