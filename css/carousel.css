@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 
+.caro .disabled.button {
+    opacity: 0.5;
+}
+
 .caro .carouselNavi {
     text-align: center;
 }
