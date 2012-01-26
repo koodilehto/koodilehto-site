@@ -50,11 +50,7 @@
     display: none;
 }
 
-.polaroid:active {
-    -webkit-transition: -webkit-transform .15s linear;
-}
-
-.polaroid:active, .selected.polaroid {
+.selected.polaroid {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     -moz-box-shadow: 3px 3px 3px #888;
