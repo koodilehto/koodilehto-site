@@ -136,3 +136,21 @@ footer .contact {
     }
 }
 
+#overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.full .close {
+    float: right;
+    background-image: url("../images/close.png"); /* from glyphicons */
+    width: 26px;
+    height: 26px;
+}
+

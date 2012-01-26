@@ -34,7 +34,29 @@ js: index
             <p>We develop and demonstrate this expertise actively by authoring, maintaining and contributing to various open source projects. In addition, many of our members have their own personal software projects out there.</p>
 
         <h2>Contact</h2>
-            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}, <a href="contact">Contact Form</a></p>
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}, <a id="contact" href="contact">Contact Form</a></p>
+
+        <div id="contactForm">
+            <div class="close"></div>
+            <h3>Contact</h3>
+            <form>
+                <label for="name">Name</label>
+                <div class="input">
+                    <input id="name" name="name" type="text" />
+                </div>
+                <label for="email">Email</label>
+                <div class="input">
+                    <input id="email" name="email" type="text" />
+                </div>
+                <label for="message">Message</label>
+                <div class="message">
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="actions">
+                    <input type="submit" class="btn primary" value="Send" />
+                </div>
+            </form>
+        </div>
     </div>
     
     <div class="span4">
