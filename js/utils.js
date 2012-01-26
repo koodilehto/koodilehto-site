@@ -12,9 +12,11 @@ define(function() {
                 pad(d.getUTCMonth()+1)+'-'+
                 pad(d.getUTCDate());
         },
-        orderEntries: function(entries, limit) {
+        orderEntries: function(entries, limit, attr) {
+            attr = attr || 'publishedDate';
+
             entries.sort(function(a, b) {
-                return a.publishedDate < b.publishedDate? 1: -1;
+                return a[attr] < b[attr]? 1: -1;
             });
 
             return entries.slice(0, limit);
@@ -45,6 +47,34 @@ define(function() {
             catch(e) {}
 
             return target.getItem(k);
+        },
+        cache: function(cacheName, cachedCb, execCb) {
+            var scope = this;
+            var cache = this.attr(cacheName);
+            var exec = true;
+
+            if(cache) {
+                var hour = 1000 * 60 * 60;
+                var diff = (new Date().getTime() - cache.time) / hour;
+
+                if(diff < 1) {
+                    cachedCb(cache.entries);
+
+                    exec = false;
+                }
+            }
+
+            if(exec) {
+                cache = {
+                    time: new Date().getTime()
+                };
+
+                execCb(cache, finish);
+            }
+
+            function finish() {
+                scope.attr(cacheName, cache);
+            }
         }
     };
 });

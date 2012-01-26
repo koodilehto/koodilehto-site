@@ -1,30 +1,20 @@
 define(['jquery', 'utils'], function($, utils) {
     function widget($parent, users, amount) {
-        var cache = utils.attr('tweetCache');
-        var parsedData = [];
-        var found = 0;
-        var exec = true;
+        utils.cache('tweetCache', cached, exec);
 
-        if(cache) {
-            var hour = 1000 * 60 * 60;
-            var diff = (new Date().getTime() - cache.time) / hour;
+        function cached(entries) {
+            entries = $.map(entries, function(k, i) {
+                k.publishedDate = new Date(k.publishedDate);
 
-            if(diff < 1) {
-                var entries = $.map(cache.entries, function(k, i) {
-                    k.publishedDate = new Date(k.publishedDate);
+                return k;
+            });
 
-                    return k;
-                });
-
-                constructTweetUI($parent, entries);
-                exec = false;
-            }
+            constructTweetUI($parent, entries);
         }
 
-        if(exec) {
-            cache = {
-                time: new Date().getTime()
-            };
+        function exec(cache, finish) {
+            var parsedData = [];
+            var found = 0;
 
             $.each(users, function(i, user) {
                 getLatestTweets(user, 3, function(data) {
@@ -41,7 +31,8 @@ define(['jquery', 'utils'], function($, utils) {
 
                             return k;
                         });
-                        utils.attr('tweetCache', cache);
+
+                        finish();
                     }
                 });
             });
