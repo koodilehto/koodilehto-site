@@ -1,2 +1,2 @@
-jekyll --auto --serve --base-url /codegrove-site
+jekyll --auto --serve --pygments --safe --base-url /codegrove-site
 
