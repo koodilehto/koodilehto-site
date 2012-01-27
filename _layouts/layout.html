@@ -10,16 +10,16 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js" type="text/javascript"></script>
-    <script src="/{{ site.url }}/js/twitterlib.js" type="text/javascript"></script>
+    <script src="/js/twitterlib.js" type="text/javascript"></script>
 
-    {% if page.js %}<script data-main="/{{ site.url }}/js/{{ page.js }}" src="/{{ site.url }}/js/require-jquery.js"></script>{% endif %}
+    {% if page.js %}<script data-main="/js/{{ page.js }}" src="/js/require-jquery.js"></script>{% endif %}
 
     <link href="http://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet" type="text/css">    
-    <link href="/{{ site.url }}/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/{{ site.url }}/css/base.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="/{{ site.url }}/css/carousel.css" type="text/css" media="screen, projection" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/carousel.css" type="text/css" media="screen, projection" />
 
-    {% if page.css %}<link rel="stylesheet" href="/{{ site.url }}/css/{{ page.css }}.css" type="text/css" media="screen, projection" />{% endif %}
+    {% if page.css %}<link rel="stylesheet" href="/css/{{ page.css }}.css" type="text/css" media="screen, projection" />{% endif %}
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -41,9 +41,9 @@
             <p id="motto">Conclave of contankerous tinkerers</p>
 
             <ul class="navi">
-                <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="/{{ site.url }}/">Home</a></li>
-                <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="/{{ site.url }}/projects">Projects</a></li>
-                <li {% if page.url == '/members/index.html' %}class="selected"{% endif %}><a href="/{{ site.url }}/members">Members</a></li>
+                <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="/">Home</a></li>
+                <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="/projects">Projects</a></li>
+                <li {% if page.url == '/members/index.html' %}class="selected"{% endif %}><a href="/members">Members</a></li>
             </ul>
 
             {{ page.extraNavi }}
