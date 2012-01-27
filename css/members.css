@@ -1,3 +1,12 @@
+.polaroids {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.polaroids .row {
+    float: left;
+}
+
 .polaroid {
     float: left;
     max-width: 75px;
@@ -5,7 +14,7 @@
 
 .polaroid {
     margin: 1em;
-    padding: 1%;
+    padding: 0.5em;
     -moz-box-shadow: 3px 3px 10px #888;
     -webkit-box-shadow: 3px 3px 10px #888;
     box-shadow: 3px 3px 10px #888;
