@@ -34,8 +34,9 @@ js: index
             <p>We develop and demonstrate this expertise actively by authoring, maintaining and contributing to various open source projects. In addition, many of our members have their own personal software projects out there.</p>
 
         <h2>Contact</h2>
-            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}, <a id="contact" href="contact">Contact Form</a></p>
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}{% comment %}, <a id="contact" href="contact">Contact Form</a>{% endcomment %}</p>
 
+        {% comment %}
         <div id="contactForm">
             <div class="close"></div>
             <h3>Contact</h3>
@@ -57,6 +58,7 @@ js: index
                 </div>
             </form>
         </div>
+        {% endcomment %}
     </div>
     
     <div class="span4">
