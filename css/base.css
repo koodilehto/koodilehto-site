@@ -53,9 +53,17 @@ body > .container {
     background-position: 0px -53px;
 }
 
-.hero-unit h1 {
+#siteHeader {
     padding-top: 1.5em;
-    padding-left: 7.5%;
+    margin-left: 5em;
+}
+
+#siteLogo {
+    float: left;
+}
+
+#siteInfo {
+    margin-left: 6em;
 }
 
 .teaser {
@@ -64,7 +72,6 @@ body > .container {
 
 #motto {
     padding-top: 0.5em;
-    padding-left: 7.5%;
     padding-bottom: 0.5em;
 }
 

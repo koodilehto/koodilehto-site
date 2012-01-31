@@ -37,8 +37,13 @@
   <body>
     <div class="container">
         <div class="hero-unit">
-            <h1>{{ site.name }}</h1>
-            <p id="motto">Conclave of contankerous tinkerers</p>
+            <div id="siteHeader">
+                <img src="/images/logo.png" id="siteLogo" alt="Koodilehto logo" />
+                <div id="siteInfo">
+                    <h1>{{ site.name }}</h1>
+                    <p id="motto">Conclave of contankerous tinkerers</p>
+                </div>
+            </div>
 
             <ul class="navi">
                 <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="/">Home</a></li>
