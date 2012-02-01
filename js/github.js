@@ -46,7 +46,10 @@ define(['jquery', 'utils'], function($, utils) {
             dataType: 'jsonp',
             url: 'https://api.github.com/users/' + user + '/events',
             success: function(r) {
-                doneCb($.map(r.data.slice(0, limit), function(k, i) {
+                var commitData = $.grep(r.data.slice(0, limit), function(k, i) {
+                    return 'commits' in k.payload;
+                });
+                doneCb($.map(commitData, function(k, i) {
                     return {
                         author: k.actor.login,
                         repo: k.repo.name,
