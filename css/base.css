@@ -68,13 +68,14 @@ body > .container {
     padding: 0;
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
-    background-image: url("../images/grove.jpg");
-    background-position: 0px -53px;
+    background-image: url("../images/winter.jpg"); /* http://www.flickr.com/photos/taivasalla/3233794715/ */
+    background-position: -60px -100px;
 }
 
 #siteHeader {
-    padding-top: 2em;
-    margin-left: 5em;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    margin-left: 9em;
     overflow: auto;
 }
 
