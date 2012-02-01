@@ -5,6 +5,7 @@
 
 .polaroids .row {
     float: left;
+    width: 100%;
 }
 
 .polaroid {
@@ -13,7 +14,7 @@
 }
 
 .polaroid {
-    margin: 0.5em;
+    margin: 1em;
     padding: 0.5em;
     -moz-box-shadow: 3px 3px 10px #888;
     -webkit-box-shadow: 3px 3px 10px #888;
