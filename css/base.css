@@ -42,6 +42,10 @@ dt, dd, footer {
     text-align: center;
 }
 
+footer h3 {
+    color: #ccc;
+}
+
 body {
     background: gray;
     margin-bottom: 2em;
@@ -104,6 +108,10 @@ footer {
     -moz-border-radius: 0 0 15px 15px;
     border-radius: 0 0 15px 15px;
     color: #ccc;
+}
+
+#attributions {
+    margin-top: 1em;
 }
 
 .navi {
