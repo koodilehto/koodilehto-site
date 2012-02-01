@@ -8,7 +8,7 @@ a {
 }
 
 h1, h2, .navi li {
-    font-family: 'Marmelad', cursive;
+    font-family: 'Marmelad';
     font-weight: 400;
 }
 
@@ -126,7 +126,7 @@ footer {
     margin: 0;
     background: #111;
     list-style: none;
-    font-size: large;
+    font-size: medium;
 }
 
 .navi {
@@ -147,6 +147,11 @@ footer {
     display: inline;
     border-right: 1px solid #CCC;
 }
+
+.subnavi li {
+    border-right: 1px dotted #CCC;
+}
+
 
 .navi li:last-child {
     border-right: none;
