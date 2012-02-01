@@ -68,14 +68,14 @@ body > .container {
     padding: 0;
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
-    background-image: url("../images/winter.jpg"); /* http://www.flickr.com/photos/taivasalla/3233794715/ */
-    background-position: -60px -100px;
+    background-image: url("../images/alps.jpg"); /* http://de.fotopedia.com/items/flickr-161058424 */
+    background-position: -60px -200px;
 }
 
 #siteHeader {
     padding-top: 3em;
-    padding-bottom: 4em;
-    margin-left: 9em;
+    padding-bottom: 3em;
+    margin-left: 4em;
     overflow: auto;
 }
 
@@ -93,8 +93,8 @@ body > .container {
 }
 
 #motto {
+    margin: 0;
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
 }
 
 footer {
