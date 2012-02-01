@@ -43,14 +43,20 @@ dt, dd, footer {
 }
 
 footer h3 {
+    font-size: 1em;
     color: #ccc;
+}
+
+footer .logo {
+    text-align: center;
+    padding: 0.5em;
 }
 
 body {
     background: gray;
     margin-bottom: 2em;
     margin-top: 2em;
-    background-image: url("../images/concrete.jpg"); /* http://www.sharecg.com/v/445/gallery/6/Texture/Seamless-old-concrete */
+    background-image: url("../images/concrete.jpg"); /* http://bitandartat.deviantart.com/#/d3j1yyy */
 }
 
 body > .container {
@@ -152,6 +158,7 @@ footer {
 
 footer .contact {
     float: right;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
