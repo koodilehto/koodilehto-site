@@ -1,11 +1,29 @@
-/* TODO: figure out if it's possible to eliminate these two somehow */
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
-    padding-left: 1em;
-    margin-right: -2.5em;
+a {
+    color: #08c;
+    text-decoration: none;
 }
 
-.span12 {
-    width: 95%;
+* {
+    font-family: Verdana;
+}
+
+h1, h2, .navi li {
+    font-family: 'Marmelad', cursive;
+    font-weight: 400;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt, dd, footer {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .right {
@@ -47,6 +65,7 @@ body > .container {
 
 .hero-unit {
     margin-bottom: 1em;
+    padding: 0;
     -moz-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
     background-image: url("../images/grove.jpg");
@@ -54,8 +73,9 @@ body > .container {
 }
 
 #siteHeader {
-    padding-top: 4em;
+    padding-top: 2em;
     margin-left: 5em;
+    overflow: auto;
 }
 
 #siteLogo {
@@ -63,7 +83,8 @@ body > .container {
 }
 
 #siteInfo {
-    margin-left: 6em;
+    float: left;
+    margin-left: 1em;
 }
 
 .teaser {
@@ -109,7 +130,7 @@ footer {
     background: #111;
     padding: 0em 2em 0em 2em;
     display: inline;
-    border-right: 1px solid;
+    border-right: 1px solid #CCC;
 }
 
 .navi li:last-child {
@@ -118,15 +139,6 @@ footer {
 
 .navi li a {
     color: #ccc;
-}
-
-h1, h2, .navi li {
-    font-family: 'Marmelad', cursive;
-    font-weight: 400;
-}
-
-p {
-    font-family: Verdana;
 }
 
 footer .contact {

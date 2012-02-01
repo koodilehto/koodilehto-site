@@ -13,7 +13,7 @@
 }
 
 .polaroid {
-    margin: 1em;
+    margin: 0.5em;
     padding: 0.5em;
     -moz-box-shadow: 3px 3px 10px #888;
     -webkit-box-shadow: 3px 3px 10px #888;
@@ -50,8 +50,7 @@
 
 .polaroid .name {
     margin-bottom: 0em;
-    font-family: 'Arial';
-    font-size: normal;
+    font-size: 13px;
     text-align: center;
 }
 
