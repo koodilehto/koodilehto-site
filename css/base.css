@@ -26,6 +26,10 @@ dt, dd, footer {
     margin-right: 1em;
 }
 
+.wrapper .rightbox {
+    font-size: large;
+}
+
 .right {
     float: right;
 }
