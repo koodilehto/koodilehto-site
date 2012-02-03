@@ -1,5 +1,4 @@
 .polaroids {
-    overflow: auto;
     margin-top: 1em;
     margin-left: 2em;
 }
@@ -60,6 +59,7 @@
 .selected.polaroid {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
     -moz-box-shadow: 3px 3px 3px #888;
     -webkit-box-shadow: 3px 3px 3px #888;
     box-shadow: 3px 3px 3px #888;
