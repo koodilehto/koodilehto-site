@@ -3,11 +3,6 @@
     margin-left: 2em;
 }
 
-.polaroids .row {
-    float: left;
-    width: 100%;
-}
-
 .polaroid {
     float: left;
     max-width: 75px;
