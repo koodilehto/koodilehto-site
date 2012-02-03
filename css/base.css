@@ -12,6 +12,10 @@ h1, h2, .navi li {
     font-weight: 400;
 }
 
+dl {
+    margin: 0;
+}
+
 dt {
     font-weight: bold;
 }
