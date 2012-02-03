@@ -5,12 +5,13 @@
 }
 
 .polaroid {
-    float: left;
+    display: inline-block;
     max-width: 75px;
 }
 
 .polaroid {
     margin: 1em;
+    margin-bottom: 2em;
     padding: 0.5em;
     -moz-box-shadow: 3px 3px 10px #888;
     -webkit-box-shadow: 3px 3px 10px #888;
