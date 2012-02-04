@@ -1,17 +1,11 @@
-.caro {
-    margin: 0.5em;
-}
-
 .caro .prev.button {
     float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
-    padding-right: 0.5em;
 }
 
 .caro .next.button {
     float: right;
     background: url(../images/arrow_right.png) no-repeat 0 -31px; /* bxslider */
-    padding-left: 0.5em;
 }
 
 .caro .button {
