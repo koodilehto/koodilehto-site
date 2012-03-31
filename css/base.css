@@ -3,11 +3,13 @@ a {
     text-decoration: none;
 }
 
+/*
 * {
     font-family: Verdana;
 }
+*/
 
-h1, h2, .navi li {
+h1, h2 {
     font-family: 'Marmelad';
     font-weight: 400;
 }
