@@ -13,8 +13,10 @@ require(['jquery', 'jquery.hashchange'], function($) {
         $(window).bind('hashchange', function() {
             var personId = window.location.hash.replace('/', '');
             var $polaroid = $(personId).length > 0? $(personId): $('.polaroid:first');
+            var $name = $('.name', $polaroid);
             var $desc = $('.description', $polaroid);
 
+            $('#name').text($name.html());
             $('#info').html($desc.html());
 
             $('.polaroid').removeClass('selected');
