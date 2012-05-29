@@ -70,9 +70,9 @@ body {
 }
 
 body > .container {
-    -moz-box-shadow: 3px 3px 10px #888;
-    -webkit-box-shadow: 3px 3px 10px #888;
-    box-shadow: 3px 3px 10px #666;
+    -moz-box-shadow: 0 0 5px 5px #999;
+    -webkit-box-shadow: 0 0 5px 5px #999;
+    box-shadow: 0 0 5px 5px #999;
 
     background: white;
     background-image: url("../images/paper.jpg"); /* http://www.flickr.com/photos/zooboing/4182512221/ */
