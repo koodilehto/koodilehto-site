@@ -25,19 +25,24 @@
 
         function moveTemplate(indexCb, animCb) {
             return function () {
-                pos = clamp(indexCb(pos, amount - 1), 0, amount - 1);
+                if(opts.cycle) {
+                    pos = indexCb(pos, amount - 1);
+                    if(pos < 0) pos = amount - 1;
+                    if(pos > amount - 1) pos = 0;
+                }
+                else pos = clamp(indexCb(pos, amount - 1), 0, amount - 1);
 
                 var animProps = {};
                 animProps[dir] = (pos * -100) + '%';
                 $wrapper.animate(animProps, opts.delay, animCb);
 
                 update(pos);
-            }
+            };
         }
 
         function update(i) {
             updateNavi($navi, i);
-            updateButtons($elem, i, amount);
+            if(!opts.cycle) updateButtons($elem, i, amount);
             updateSlides($slides, i);
         }
     }
@@ -60,15 +65,15 @@
             'vertical-align':'top'
         };
         var len = 100 / $slides.length;
-        slideOpts[axis] = parseInt(len) + '%';
+        slideOpts[axis] = parseInt(len, 10) + '%';
 
         // opera hack! opera rounds width so we need to deal with that using some
         // padding
         if(axis == 'width') {
-            slideOpts['padding-right'] = len - parseInt(len) + '%';
+            slideOpts['padding-right'] = len - parseInt(len, 10) + '%';
         }
         else {
-            slideOpts['padding-bottom'] = len - parseInt(len) + '%';
+            slideOpts['padding-bottom'] = len - parseInt(len, 10) + '%';
         }
         $slides.each(function (i, e) {
             $(e).css(slideOpts).addClass('slide');
@@ -140,8 +145,11 @@
         var $begin = $elem.find('.first,.prev');
         var $end = $elem.find('.last,.next');
 
-        i == 0 ? $begin.addClass('disabled') : $begin.removeClass('disabled');
-        i == amount - 1 ? $end.addClass('disabled') : $end.removeClass('disabled');
+        if(i === 0) $begin.addClass('disabled');
+        else $begin.removeClass('disabled');
+
+        if(i == amount - 1) $end.addClass('disabled');
+        else $end.removeClass('disabled');
     }
 
     function updateSlides($slides, i) {
@@ -173,7 +181,7 @@
                    this.onselectstart = function() { return false; };
                });
         });
-    };
+    }
 
     $.fn.caro = function (options) {
         return this.each(function () {
@@ -184,7 +192,8 @@
                 still: 1000, // how long slide stays still in playback mode
                 autoPlay: false,
                 naviClass: 'navi',
-                autoNavi: false
+                autoNavi: false,
+                cycle: false
             }, options);
 
             var caro = opts.dir == 'horizontal' ? horizontalCaro : verticalCaro;
