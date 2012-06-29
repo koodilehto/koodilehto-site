@@ -1,5 +1,5 @@
 define(['jquery', 'utils'], function($, utils) {
-    function widget($parent, users, amount) {
+    function widget($parent, users, amount, doneCb) {
         utils.cache('githubCache', cached, exec);
 
         function cached(entries) {
@@ -9,7 +9,7 @@ define(['jquery', 'utils'], function($, utils) {
                 return k;
             });
 
-            constructGitHubUI($parent, entries);
+            constructGitHubUI($parent, entries, doneCb);
         }
 
         function exec(cache, finish) {
@@ -24,7 +24,7 @@ define(['jquery', 'utils'], function($, utils) {
                     if(found == users.length) {
                         var entries = utils.orderEntries(parsedData, amount, 'date');
 
-                        constructGitHubUI($parent, entries);
+                        constructGitHubUI($parent, entries, doneCb);
 
                         cache.entries = $.map(entries, function(k, i) {
                             k.date = k.date.getTime();
@@ -55,13 +55,14 @@ define(['jquery', 'utils'], function($, utils) {
                         repo: k.repo.name,
                         commits: k.payload.commits,
                         date: new Date(k.created_at)
-                    }
+                    };
                 }));
             }
         });
     }
 
-    function constructGitHubUI($parent, entries) {
+    function constructGitHubUI($parent, entries, doneCb) {
+        doneCb = doneCb || function() {};
         var $dl = $('<dl>').appendTo($parent);
 
         $.each(entries, function(i, k) {
@@ -78,6 +79,8 @@ define(['jquery', 'utils'], function($, utils) {
                 });
             }
         });
+
+        doneCb($parent);
     }
 
     return {
