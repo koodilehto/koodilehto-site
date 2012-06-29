@@ -31,21 +31,29 @@
     }
 
     function checkText($elem, options) {
+        var sep = options.separator;
         var origText = $elem.text();
-        var split = origText.split(' ');
+        var split = origText.split(sep);
 
         if(split.length > options.visible) {
-            var text = split.slice(0, options.visible).join(' ');
-            $elem.text(text);
+            var text;
 
-            $more('span', options.more, function() {
+            if(options.atFront) text = split.slice(-options.visible);
+            else text = split.slice(0, options.visible);
+
+            $elem.text(text.join(sep));
+
+            var $m = $more('span', options.more, function() {
                 if(options.showCb) {
                     options.showCb($elem, origText);
                 }
                 else {
                     $elem.text(origText);
                 }
-            }).appendTo($elem);
+            });
+
+            if(options.atFront) $m.prependTo($elem);
+            else $m.appendTo($elem);
 
             return true;
         }
@@ -62,16 +70,20 @@
         return $m;
     }
 
+    var defaults = {
+        visible: 3,
+        more: '&hellip;',
+        separator: ' ',
+        showCb: null,
+        atFront: false
+    };
     $.fn.ellipsis = function(options) {
         return this.each(function () {
             var $elem = $(this);
-            var opts = $.extend({
-                visible: 3,
-                more: '...',
-                showCb: null
-            }, options);
+            var opts = $.extend({}, defaults, options);
 
             ellipsis($elem, opts);
         });
     };
+    $.fn.ellipsis.options = defaults;
 })(jQuery);
