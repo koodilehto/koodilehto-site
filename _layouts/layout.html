@@ -47,7 +47,7 @@
         {{ content }}
         <footer>
             <div>
-                <span>&copy; {{ 'now' | date: "%Y" }} {{ site.copyright }}</span>
+                <span>&copy; {{ site.time | date: "%Y" }} {{ site.copyright }}</span>
 		<span class="contact">
 		<a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
 		Phone: {{ site.phone }}<br />

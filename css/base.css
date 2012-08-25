@@ -205,3 +205,7 @@ footer .contact {
     height: 26px;
 }
 
+.hero-unit h1 {
+    margin-top: 0;
+}
+
