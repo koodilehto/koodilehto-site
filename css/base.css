@@ -27,13 +27,12 @@ dt, dd, footer {
     line-height: 18px;
 }
 
-.wrapper {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-.wrapper .rightbox {
-    font-size: large;
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .right {
