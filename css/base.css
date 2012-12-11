@@ -1,5 +1,5 @@
 a {
-    color: #08c;
+    color: #0078b5;
     text-decoration: none;
 }
 
@@ -25,6 +25,10 @@ dt {
 dt, dd, footer {
     font-size: 13px;
     line-height: 18px;
+}
+
+footer a {
+    color: #fdfeff;
 }
 
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
