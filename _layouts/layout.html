@@ -12,7 +12,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="http://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet" type="text/css">    
+    <link href="http://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet" type="text/css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/carousel.css" type="text/css" media="screen, projection" />
@@ -28,7 +28,7 @@
     <div class="container">
         <div class="hero-unit">
             <div id="siteHeader">
-                <img src="/images/logo_black.png" id="siteLogo" alt="Koodilehto logo" class="hidden-phone" />
+                <a href="/"><img src="/images/logo_black.png" id="siteLogo" alt="Koodilehto logo" class="hidden-phone" /></a>
                 <div id="siteInfo">
                     <h1>{{ site.name }}</h1>
                     <p id="motto"></p>
@@ -48,13 +48,13 @@
         <footer>
             <div>
                 <span>&copy; {{ site.time | date: "%Y" }} {{ site.copyright }}</span>
-		<span class="contact">
-		<a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-		Phone: {{ site.phone }}<br />
-		<img class="logo" src="/images/logo_white.png" id="actualLogoWhite" alt="Koodilehto logo" />
-		</span>
+        <span class="contact">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+        Phone: {{ site.phone }}<br />
+        <a href="/"><img class="logo" src="/images/logo_white.png" id="actualLogoWhite" alt="Koodilehto logo" /></a>
+        </span>
             </div>
-            
+
             <div id="attributions">
                 <h3>Attributions</h3>
                 <div><a href="http://www.flickr.com/photos/13522901@N00/6945360545/">6LB6 by splorp (CC-BY-NC-ND)</a></div>
