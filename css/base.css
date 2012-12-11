@@ -97,7 +97,7 @@ body > .container {
 
 #siteHeader {
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
     margin-left: 4em;
     overflow: auto;
 }
@@ -108,7 +108,7 @@ body > .container {
 
 #siteInfo {
     float: left;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .teaser {
@@ -117,8 +117,7 @@ body > .container {
 
 #motto {
     margin: 0;
-    margin-left: 0.5em;
-    padding-top: 0.5em;
+    float: right;
 }
 
 footer {
