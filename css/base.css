@@ -69,16 +69,16 @@ body {
     background: gray;
     margin-bottom: 2em;
     margin-top: 2em;
-    background-image: url("../images/concrete.jpg"); /* http://bitandartat.deviantart.com/#/d3j1yyy */
+    background-image: url("../images/cubes.png");
 }
 
 body > .container {
-    -moz-box-shadow: 0 0 5px 5px #999;
-    -webkit-box-shadow: 0 0 5px 5px #999;
-    box-shadow: 0 0 5px 5px #999;
+    -moz-box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
+    -webkit-box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
+    box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
 
     background: white;
-    background-image: url("../images/paper.jpg"); /* http://www.flickr.com/photos/zooboing/4182512221/ */
+    background-image: url("../images/bright_squares.png");
 }
 
 body > .container {
