@@ -14,12 +14,5 @@ require(['jquery', 'motto', 'rss', 'twitter', 'jquery.caro', 'jquery.yabox'],
             $content: $('#contactForm')
         });
         $('#contactForm .close').bind('click', $('#contact').yabox.hide);
-
-        /* bg pan test
-        $('.hero-unit').on('mousemove', function(e) {
-            var y = e.pageY - this.offsetTop;
-
-            $(this).css('background-position-y', -y + 'px');
-        });*/
     });
 });
