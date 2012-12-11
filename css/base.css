@@ -3,11 +3,11 @@ a {
     text-decoration: underline;
 }
 
-/*
-* {
-    font-family: Verdana;
+p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
-*/
 
 h1, h2 {
     font-family: 'Marmelad';
