@@ -1,6 +1,6 @@
 require(['motto', 'jquery', 'jquery.caro'], function(motto, $) {
     $(function() {
-        $('#gallery').caro({naviClass: 'carouselNavi', cycle: true});
+        $('#gallery').caro({naviClass: 'carouselNavi', buttonClass: 'btn', cycle: true});
 
         motto.pick();
 

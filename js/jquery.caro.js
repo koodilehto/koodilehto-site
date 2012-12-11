@@ -1,4 +1,7 @@
-/* MIT (c) Juho Vepsalainen */
+/*! caro.js - v0.7.2 - 2012-12-11
+* http://bebraw.github.com/caro.js/
+* Copyright (c) 2012 Juho Vepsalainen; Licensed MIT */
+
 (function ($) {
     function horizontalCaro($elem, opts) {
         caroize($elem, opts, 'left', 'width');
@@ -9,22 +12,27 @@
     }
 
     function caroize($elem, opts, dir, axis) {
-        var $slideContainer = $elem.find('.slides');
+        var $slideContainer = $('.slides:first', $elem);
         var $slides = $slideContainer.children().append($('<div>'));
         var $wrapper = $('<div>').append($slides).appendTo($slideContainer);
-        var $navi = $elem.find('.' + opts.naviClass);
+        var $navi = $('.' + opts.naviClass + ':last', $elem);
         var amount = $slides.length;
         var pos = 0;
 
         initCSS($slideContainer, axis, $wrapper, dir, $slides);
-        initTitles($slides, $navi, moveTemplate, opts.autoNavi);
+        initTitles($slides, $navi, moveTemplate, opts.autoNavi, opts.buttonClass);
         initNavi($elem, $wrapper, moveTemplate);
         initPlayback($elem, $wrapper, moveTemplate, opts.autoPlay, opts.still);
-        update(pos);
+
+        if(opts.resize) {
+            $slideContainer.height($slides.eq(pos).height() || undefined);
+        }
+
+        update(pos, opts.buttonClass);
         disableSelection($elem);
 
         function moveTemplate(indexCb, animCb) {
-            return function () {
+            return function() {
                 if(opts.cycle) {
                     pos = indexCb(pos, amount - 1);
                     if(pos < 0) pos = amount - 1;
@@ -36,14 +44,23 @@
                 animProps[dir] = (pos * -100) + '%';
                 $wrapper.animate(animProps, opts.delay, animCb);
 
-                update(pos);
+                update(pos, opts.buttonClass);
             };
         }
 
-        function update(i) {
-            updateNavi($navi, i);
+        function update(i, buttonClass) {
+            updateNavi($navi, i, buttonClass);
             if(!opts.cycle) updateButtons($elem, i, amount);
             updateSlides($slides, i);
+
+            if(opts.resize) {
+                $slideContainer.animate({
+                    'height': $slides.eq(i).height() || undefined
+                }, opts.resizeDelay, function() {
+                    $elem.parents('.slides').siblings('.navi').
+                        find('.selected.' + buttonClass + ':first').trigger('click');
+                });
+            }
         }
     }
 
@@ -80,12 +97,16 @@
         });
     }
 
-    function initTitles($slides, $navi, move, autoNavi) {
+    function initTitles($slides, $navi, move, autoNavi, buttonClass) {
         $slides.each(function (i, k) {
-            var $e = $('<div>').css('display', 'inline').bind('click',
-                move(function () {
-                    return i;
-                })).appendTo($navi).addClass('title button');
+            var $e = $('<a>', {href: '#'}).css('display', 'inline').bind('click',
+                function(e) {
+                    e.preventDefault();
+
+                    move(function () {
+                        return i;
+                    })();
+                }).appendTo($navi).addClass('title ' + buttonClass);
 
             if(autoNavi) {
                 $(k).clone().appendTo($e);
@@ -98,7 +119,8 @@
 
     function initNavi($elem, $wrapper, move) {
         function bind(sel, cb) {
-            $elem.find(sel).bind('click', function () {
+            $elem.find(sel).bind('click', function (e) {
+                e.preventDefault();
                 $wrapper.clearQueue();
                 move(cb)();
             });
@@ -122,20 +144,26 @@
         var anim = move(function (a, len) {
             return a == len ? 0 : a + 1;
         }, function () {
-            $(this).delay(still).queue(function () {
+            $(this).delay(still).queue(function() {
                 anim();
                 $(this).dequeue();
             });
         });
 
-        $elem.find('.play').bind('click', anim);
-        $elem.find('.stop').bind('click', function () {
+        $elem.find('.play').bind('click', function(e) {
+            e.preventDefault();
+
+            anim();
+        });
+        $elem.find('.stop').bind('click', function(e) {
+            e.preventDefault();
+
             $wrapper.clearQueue();
         });
     }
 
-    function updateNavi($navi, i) {
-        var $titles = $navi.find('.title.button');
+    function updateNavi($navi, i, buttonClass) {
+        var $titles = $navi.find('.title.' + buttonClass);
 
         $titles.removeClass('selected');
         $titles.eq(i).addClass('selected');
@@ -172,7 +200,7 @@
 
     function disableSelection($e) {
         // http://stackoverflow.com/questions/2700000/how-to-disable-text-selection-using-jquery
-        return $e.each(function() {           
+        return $e.each(function() {
             $(this).attr('unselectable', 'on').css({
                    '-moz-user-select':'none',
                    '-webkit-user-select':'none',
@@ -192,8 +220,11 @@
                 still: 1000, // how long slide stays still in playback mode
                 autoPlay: false,
                 naviClass: 'navi',
+                buttonClass: 'button',
                 autoNavi: false,
-                cycle: false
+                cycle: false,
+                resize: true,
+                resizeDelay: 300 // in ms
             }, options);
 
             var caro = opts.dir == 'horizontal' ? horizontalCaro : verticalCaro;
