@@ -1,7 +1,5 @@
-require(['motto', 'jquery', 'jquery.hashchange'], function(motto, $) {
+require(['jquery', 'jquery.hashchange'], function($) {
     $(function() {
-        motto.pick();
-
         // opera hack to make sure descriptions keep hidden (use css instead?)
         $('.polaroid .description').hide();
 
