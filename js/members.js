@@ -1,7 +1,10 @@
-require(['jquery', 'jquery.hashchange'], function($) {
+require(['jquery', 'jquery.hashchange', 'jquery.randomize'], function($) {
     $(function() {
         // opera hack to make sure descriptions keep hidden (use css instead?)
         $('.polaroid .description').hide();
+
+        // Randomize order of members
+        $('.polaroids').randomize('.polaroid');
 
         $('.polaroid').on('click', function() {
             // Need to put '/' in to the hash so that page won't scroll to the
