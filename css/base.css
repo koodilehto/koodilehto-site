@@ -211,3 +211,21 @@ footer .contact {
     margin-top: 0;
 }
 
+@media (max-width: 480px) {
+    #siteHeader {
+        margin-left: 2em;
+    }
+
+    #siteInfo {
+        margin-left: 0;
+    }
+
+    .navi li {
+        padding: 0em 1em 0em 1em;
+    }
+
+    .hero-unit {
+        background-repeat: no-repeat;
+        background-position: -400px 60px;
+    }
+}
