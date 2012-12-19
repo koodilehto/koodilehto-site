@@ -7,10 +7,23 @@ js: index
 
 <div class="row">
     <div class="span8">
-        <h2>Featured Projects</h2>
+        <h2>About</h2>
+        <p>There are a lot of open technologies available these days. Besides open source there has been increasing interest in concepts such as open hardware and open data. We are experts with a proven track record in these fields.</p>
+        <p>Koodilehto co-operative was formed by a group of software professionals with an academic background. Our strength lies within our variety. While some of us focus more on the web, we have proficiency in data mining and mobile technologies. We are particularly adept at utilizing open source technologies and even develop those on our own.</p>
+        <p>We provide primarily following services:</p>
+        <ul>
+            <li>Web development and consulting (sites, services). Example technologies: Django, Ruby on Rails, Node.js.</li>
+            <li>Embedded Linux development</li>
+            <li>Mobile development (Android)</li>
+        </ul>
+
+        <p>If you think we could be of benefit for you, please do contact us either via <a href="mailto:{{ site.email }}">email</a> or by phone ({{ site.phone }}).</p>
+
+        <h2>Some of Our Projects</h2>
         <div class="caro" id="projects">
             <div class="prev button"></div>
             <div class="next button"></div>
+            <div class="carouselNavi"></div>
             <div class="slides">
                 <div title="Koodilehto Site">
                     <h3><a href="/projects/koodilehto">Koodilehto Site</a></h3>
@@ -38,22 +51,7 @@ js: index
                     <p>The project is a good example of collaboration between local organizations. It showcases our expertise in embedded development and 3D graphics. One instance of this latter was <a href="http://www.blender.org">Blender3d</a> based simulator we implemented and then used to visualize our effects before actual hardware was ready.</p>
                 </div>
             </div>
-            <div class="carouselNavi"></div>
         </div>
-
-        <h2>Our Services</h2>
-        <p>Koodilehto is a co-operative of software professionals located in the Jyväskylä region. We share a common background at the academia. Some of us focus more on the web side of things while we also have strong knowledge in the hardware sector. We are particularly adept at utilizing open source technologies and even develop those on our own.</p>
-        <p>We provide primarily following services:</p>
-        <ul>
-            <li>Web development and consulting (sites, services). Example technologies: Django, Ruby on Rails, Node.js.</li>
-            <li>Embedded Linux development</li>
-            <li>Mobile development (Android)</li>
-        </ul>
-
-        <p>If you feel like we could be of use for you, please do contact us!</p>
-
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>, Phone: {{ site.phone }}{% comment %}, <a id="contact" href="contact">Contact Form</a>{% endcomment %}</p>
 
         {% comment %}
         <div id="contactForm">
@@ -82,10 +80,12 @@ js: index
     </div>
 
     <div class="span4">
-        <h2>Member Blogs</h2>
+        <h2>Blog Entries</h2>
+        <p>Our professionals maintain blogs on open source technologies. Have a sneek peek at them!</p>
         <div id="news"></div>
 
-        <h2>Member Tweets</h2>
+        <h2>Tweets</h2>
+        <p>As just having a blog isn't enough these days, our professionals also tweet.</p>
         <div id="tweets"></div>
     </div>
 
