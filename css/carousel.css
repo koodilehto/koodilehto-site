@@ -6,10 +6,6 @@
     -moz-box-shadow: inset 0 0 10px #999;
 }
 
-.caro a {
-    color: black;
-}
-
 .caro .prev {
     float: left;
     background: url(../images/arrow_left.png) no-repeat 0 -31px; /* bxslider */
