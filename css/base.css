@@ -125,7 +125,6 @@ body > .container {
 }
 
 footer {
-    background: #333;
     margin-top: 1em;
     padding: 1em;
     -moz-border-radius: 0 0 15px 15px;
@@ -141,7 +140,6 @@ footer {
     width: 100%;
     padding: 0.5em 0em 0.5em 0em;
     margin: 0;
-    background: #111;
     list-style: none;
     font-size: medium;
 }
@@ -159,10 +157,13 @@ footer {
 }
 
 .navi li {
-    background: #111;
     padding: 0em 2em 0em 2em;
     display: inline;
     border-right: 1px solid #CCC;
+}
+
+.navi, .navi li, footer {
+    background: rgb(63, 51, 51);
 }
 
 .subnavi li {
