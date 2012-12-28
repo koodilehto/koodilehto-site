@@ -1,14 +1,14 @@
 define(['jquery', 'utils'], function($, utils) {
     function widget($parent, feeds, amount) {
         var parsedData = [];
-    
+
         $.each(feeds, function(i, url) {
             parseRSS(url, function(data) {
                 parsedData.push(data);
 
                 if(parsedData.length == feeds.length) {
                     var entries = orderRSSEntries(parsedData, amount);
-                    
+
                     constructRSSUI($parent, entries);
                 }
             });
@@ -33,7 +33,7 @@ define(['jquery', 'utils'], function($, utils) {
             var author = k.author;
 
             entries = entries.concat(k.entries.slice(0, postsPerFeed));
- 
+
             $.each(entries, function(i, k) {
                 k.author = k.author || author;
             });
