@@ -23,10 +23,6 @@ dl {
     margin: 0;
 }
 
-dt {
-    font-weight: bold;
-}
-
 dt, dd, footer {
     font-size: 13px;
     line-height: 18px;
