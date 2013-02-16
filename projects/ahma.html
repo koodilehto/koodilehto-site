@@ -3,6 +3,7 @@ layout: projectlayout
 title: Projects - Ahma
 js: ahma
 css: ahma
+permalink: ahma/
 ---
 
 <div class="row">
@@ -63,7 +64,7 @@ css: ahma
 
         <p>To add kernel support you need to add some platform data to TS-7200. If you like, you may define your own machine to Linux kernel, but I have just modified the existing TS-7200 information. It is straightforward because Linux has the GPIO driver and DS1820 driver, all we need is to tell Linux to look for DS1820 from a given GPIO port.</p>
 
-        <p>I have connected the bus to DIO1 which is GPIO 8 on processor. <a href="kernel.patch">Here's my kernel patch</a>.</p>
+        <p>I have connected the bus to DIO1 which is GPIO 8 on processor. <a href="/projects/kernel.patch">Here's my kernel patch</a>.</p>
 
         <p>After updating the kernel the plain-text measurement are readable from the /sys file system. Also, some kernel messages are generated when a sensor is detected at boot time.</p>
 
@@ -112,7 +113,7 @@ css: ahma
         </div>
 
         <h3>Other</h3>
-        <p><a href="temp-riverside.pdf">Temperature during several months at the riverside location.</a></p>
+        <p><a href="/projects/temp-riverside.pdf">Temperature during several months at the riverside location.</a></p>
     </div>
 </div>
 
