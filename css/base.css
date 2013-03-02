@@ -14,9 +14,21 @@ p {
     word-wrap: break-word;
 }
 
+/* Font Squirrel */
+@font-face {
+    font-family: 'LatinModernSans10Regular';
+    src: url('lmsans10-regular-webfont.eot');
+    src: url('lmsans10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lmsans10-regular-webfont.woff') format('woff'),
+         url('lmsans10-regular-webfont.ttf') format('truetype'),
+         url('lmsans10-regular-webfont.svg#LatinModernSans10Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1, h2 {
-    font-family: 'Marmelad';
-    font-weight: 400;
+    font: 'LatinModernSans10Regular', Arial, sans-serif;
 }
 
 dl {
