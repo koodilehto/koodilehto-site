@@ -46,7 +46,8 @@
         {{ content }}
         <footer>
             <div>
-                <span>&copy; {{ site.time | date: "%Y" }} {{ site.copyright }}</span>
+        <span>&copy; {{ site.time | date: "%Y" }} {{ site.copyright }} | Business ID: {{ site.businessId }}
+	</span>
         <span class="contact">
         <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
         Phone: {{ site.phone }}<br />
