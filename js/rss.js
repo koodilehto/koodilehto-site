@@ -31,7 +31,7 @@ define(['jquery', 'utils'], function($, utils) {
     // TODO: might want to decompose postsPerFeed and publishedDate
     // thingy out of this
     function orderRSSEntries(data, amount, postsPerFeed) {
-        postsPerFeed = postsPerFeed || 1;
+        postsPerFeed = postsPerFeed || 3;
 
         return utils.orderEntries($.map(data, function(v) {
             var author = v.author;
