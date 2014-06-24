@@ -34,12 +34,15 @@
                 </div>
             </div>
 
-            <ul class="navi">
-                <li {% if page.url == '/index.html' %}class="selected"{% endif %}><a href="/">Home</a></li>
-                <li {% if page.url == '/projects/index.html' %}class="selected"{% endif %}><a href="/projects/">Projects</a></li>
-                <li {% if page.url == '/formembers/index.html' %}class="selected"{% endif %}><a href="/formembers/">For members</a></li>
-                <li {% if page.url == '/professionals/index.html' %}class="selected"{% endif %}><a href="/professionals/">Professionals</a></li>
-            </ul>
+            <div class="navi">
+                <ul>
+                    <li {% if page.url == '/' %}class="selected"{% endif %}><a href="/">Home</a></li>
+                    <li {% if page.url == '/projects/' %}class="selected"{% endif %}><a href="/projects/">Projects</a></li>
+                    <li {% if page.url == '/professionals/' %}class="selected"{% endif %}><a href="/professionals/">Professionals</a></li>
+                </ul>
+
+                <span class="formembers{% if page.url == '/formembers/' %} selected{% endif %}"><a href="/formembers/">For members</a></span>
+            </div>
 
             {{ page.extraNavi }}
         </div>

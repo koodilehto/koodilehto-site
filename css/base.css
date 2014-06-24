@@ -145,6 +145,7 @@ footer {
 }
 
 .navi {
+    overflow: auto;
     width: 100%;
     padding: 0.5em 0em 0.5em 0em;
     margin: 0;
@@ -154,6 +155,15 @@ footer {
 
 .navi {
     opacity: 0.8;
+}
+
+.navi ul {
+    float: left;
+}
+
+.formembers {
+    float: right;
+    margin-right: 1em;
 }
 
 .subnavi {
@@ -178,12 +188,11 @@ footer {
     border-right: 1px dotted #CCC;
 }
 
-
 .navi li:last-child {
     border-right: none;
 }
 
-.navi li a {
+.navi a {
     color: #ccc;
 }
 
