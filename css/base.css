@@ -159,6 +159,7 @@ footer {
 
 .navi ul {
     float: left;
+    margin: 0;
 }
 
 .formembers {
