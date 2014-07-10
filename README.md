@@ -1,6 +1,6 @@
 # Koodilehto site
 
-If you want to run this site locally, make sure you have Ruby and jekyll installed ("gem install jekyll"). Once you have done that, just "jekyll". If you want to change default port or something, just use the flags (ie. --server 3000). After you have the server running, surf to http://localhost:4000 .
+If you want to run this site locally, make sure you have Ruby and jekyll installed ("gem install jekyll"). Once you have done that, just "jekyll serve -w". If you want to change default port or something, just use the flags (ie. --server 3000). After you have the server running, surf to http://localhost:4000 .
 
 ## Ubuntu Issues
 
