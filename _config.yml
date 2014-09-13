@@ -1,3 +1,4 @@
+relative_permalinks: true
 port: 4000
 safe: true
 pygments: true
