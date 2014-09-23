@@ -68,6 +68,10 @@ footer a {
     text-align: center;
 }
 
+footer {
+    overflow: auto;
+}
+
 footer h3 {
     font-size: 1em;
     color: #ccc;
