@@ -44,7 +44,7 @@ footer a {
     color: #fdfeff;
 }
 
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+.col {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -86,15 +86,15 @@ body {
 }
 
 body > .container {
+    padding: 0;
+
     -moz-box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
     -webkit-box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
     box-shadow: 0 0 3px 3px rgba(211, 211, 211, 0.5);
 
     background: white;
     background-image: url("../images/egg_shell.png");
-}
 
-body > .container {
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
