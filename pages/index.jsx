@@ -117,6 +117,13 @@ var Index = React.createClass({
                         </a>
                     </div>
                 </div>
+
+                <h2>Contact</h2>
+
+                <p><a href="mailto:info@koodilehto.fi">info@koodilehto.fi</a></p>
+                <p>Phone: +358 40 4619296</p>
+                <p>Business ID: 2446827-3</p>
+
             </div>
         );
     }
