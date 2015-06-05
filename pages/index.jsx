@@ -124,6 +124,9 @@ var Index = React.createClass({
                 <p>Phone: +358 40 4619296</p>
                 <p>Business ID: 2446827-3</p>
 
+                <h2>Attributions</h2>
+
+                <p><a href="http://www.flickr.com/photos/13522901@N00/6945360545/">6LB6 by splorp (CC-BY-NC-ND)</a></p>
             </div>
         );
     }
