@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "koodilehto.fi",
+  "description": "Koodilehto site",
+  "author": "Juho Vepsalainen",
+  "version": "0.0.1",
+  "dependencies": {
+    "antwar-default-theme": "antwarjs/default-theme",
+    "antwar-highlight-plugin": "antwarjs/highlight-plugin",
+    "antwar-prevnext-plugin": "antwarjs/prevnext-plugin",
+    "antwar-rss-plugin": "antwarjs/rss-plugin",
+    "highlight.js": "^8.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koodilehto/site.git"
+  },
+  "homepage": "https://www.koodilehto.fi",
+  "bugs": {
+    "url": "https://github.com/koodilehto/site/issues"
+  },
+  "keywords": [
+    "koodilehto",
+    "antwar"
+  ],
+  "license": "MIT"
+}
