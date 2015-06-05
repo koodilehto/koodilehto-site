@@ -13,7 +13,11 @@ var Index = React.createClass({
                 background: '#558E8E',
                 backgroundImage: 'url(/images/front.jpg)',
                 backgroundSize: 'cover',
-            }
+            },
+            frontArrow: {
+                paddingTop: '4vw',
+                color: 'rgba(255, 255, 255, 0.4)',
+            },
         };
 
         return (
@@ -27,6 +31,7 @@ var Index = React.createClass({
                         {/*<a href='blog' className='btn btn--inverted'>Read the Blog</a>*/}
                         <a href='https://github.com/koodilehto' className='btn btn--inverted'>View on GitHub</a>
                     </div>
+                    <div className='front-arrow' style={styles.frontArrow}>&#x25BC;</div>
                 </div>
                 <div className='post__content'>
                     <h2>What is Koodilehto?</h2>
