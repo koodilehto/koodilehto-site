@@ -62,7 +62,7 @@ module.exports = {
   theme: {
     name: 'antwar-default-theme',
     navigation: [
-      {title: 'Home', url: '/'},
+      //{title: 'Home', url: '/'},
       //{title: 'Blog', url: '/blog'}
     ],
     analyticsId: 'UA-XXX',
