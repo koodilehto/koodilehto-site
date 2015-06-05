@@ -24,7 +24,7 @@ var Index = React.createClass({
                     <h1 className='front-header' style={styles.frontHeader}>Koodilehto</h1>
                     <h3>Combines open technologies for your benefit</h3>
                     <div className='front__buttons'>
-                        <a href='blog' className='btn btn--inverted'>Read the Blog</a>
+                        {/*<a href='blog' className='btn btn--inverted'>Read the Blog</a>*/}
                         <a href='https://github.com/koodilehto' className='btn btn--inverted'>View on GitHub</a>
                     </div>
                 </div>
