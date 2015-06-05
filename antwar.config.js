@@ -19,7 +19,7 @@ module.exports = {
   name: 'Koodilehto',
   author: 'Koodilehto',
   deploy: {
-    branch: 'master',
+    branch: 'gh-pages',
   },
   plugins: [
     rssPlugin(),
