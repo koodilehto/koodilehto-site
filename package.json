@@ -4,6 +4,11 @@
   "description": "Koodilehto site",
   "author": "Juho Vepsalainen",
   "version": "0.0.1",
+  "scripts": {
+    "start": "antwar -d",
+    "build": "antwar -b",
+    "deploy": "antwar -D"
+  },
   "dependencies": {
     "antwar-default-theme": "antwarjs/default-theme",
     "antwar-highlight-plugin": "antwarjs/highlight-plugin",
