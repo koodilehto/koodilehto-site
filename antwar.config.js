@@ -1,8 +1,10 @@
 'use strict';
 
+/*
 var rssPlugin = require('antwar-rss-plugin');
 var prevnextPlugin = require('antwar-prevnext-plugin');
 var highlightPlugin = require('antwar-highlight-plugin');
+*/
 
 module.exports = {
   assets: [
@@ -22,14 +24,14 @@ module.exports = {
     branch: 'gh-pages',
   },
   plugins: [
-    rssPlugin(),
+    /*rssPlugin(),
     prevnextPlugin(),
     highlightPlugin({
       style: function() {
         require('highlight.js/styles/github.css');
       },
       languages: ['javascript'],
-    })
+    })*/
   ],
   paths: {
     '/': {
