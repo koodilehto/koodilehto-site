@@ -20,6 +20,7 @@ var Index = React.createClass({
             <div className='post post--front'>
                 <div className='header-image header-image--front' style={styles.headerImage}></div>
                 <div className='post__heading'>
+                    <span className='logo logo--front' dangerouslySetInnerHTML={{__html: require('../images/koodilehto_logo_white.svg')}} />
                     <h1 className='front-header' style={styles.frontHeader}>Koodilehto</h1>
                     <h3>Combines open technologies for your benefit</h3>
                     <div className='front__buttons'>
@@ -77,6 +78,12 @@ var Index = React.createClass({
                     </p>
 
                     <p>SurviveJS - Webpack and React is an ebook aimed towards developers interested in keeping their frontend fu up to date. These two technologies represent one of the biggest steps forward. The ebook helps you to get ahead of the competition.</p>
+
+                    <h2>Members</h2>
+
+                    <p>
+
+                    </p>
                 </div>
             </div>
         );
