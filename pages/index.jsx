@@ -13,6 +13,7 @@ var Index = React.createClass({
                 background: '#558E8E',
                 backgroundImage: 'url(/images/front.jpg)',
                 backgroundSize: 'cover',
+                backgroundPositionX: '50%',
             },
             frontArrow: {
                 paddingTop: '4vw',
