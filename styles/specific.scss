@@ -1,3 +1,24 @@
+.front-header {
+    font-size: 54px;
+    line-height: 1.5;
+}
+
+.header-image {
+    background: #558E8E;
+    background-image: url("/images/front.jpg");
+    background-size: "cover";
+    background-position-x: 50%;
+}
+
+.front-arrow {
+    padding-top: 4vw;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.front-arrow:after {
+    content: "\25BC";
+}
+
 .figure {
     width: 100%;
 
