@@ -53,5 +53,40 @@
         "url": "http://www.linkedin.com/in/airzero",
         "image": "images/professionals/airzero.jpg",
         "nick": "airzero"
+    },
+    {
+        "url": "https://github.com/katis",
+        "image": "https://avatars2.githubusercontent.com/u/877226?v=3&s=200",
+        "nick": "katis"
+    },
+    {
+        "url": "https://github.com/puumuki",
+        "image": "https://avatars2.githubusercontent.com/u/1015192?v=3&s=200",
+        "nick": "puumuki"
+    },
+    {
+        "url": "https://github.com/Ile2",
+        "image": "https://avatars1.githubusercontent.com/u/1454138?v=3&s=200",
+        "nick": "Ile2"
+    },
+    {
+        "url": "https://github.com/mtaalas",
+        "image": "https://avatars3.githubusercontent.com/u/2191383?v=3&s=200",
+        "nick": "mtaalas"
+    },
+    {
+        "url": "https://github.com/jasalt",
+        "image": "https://avatars2.githubusercontent.com/u/2306521?v=3&s=200",
+        "nick": "jasalt"
+    },
+    {
+        "url": "https://github.com/katajakasa",
+        "image": "https://avatars0.githubusercontent.com/u/1027517?v=3&s=200",
+        "nick": "katajakasa"
+    },
+    {
+        "url": "https://github.com/kamiheku/",
+        "image": "https://avatars1.githubusercontent.com/u/278244?v=3&s=200",
+        "nick": "kamiheku"
     }
 ]
