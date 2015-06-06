@@ -21,17 +21,17 @@ module.exports = React.createClass({
                     <h2>Members</h2>
 
                     <Members data={require('./members.json')} />
+
+                    <h2>Contact</h2>
+
+                    <p><a href="mailto:info@koodilehto.fi">info@koodilehto.fi</a></p>
+                    <p>Phone: +358 40 4619296</p>
+                    <p>Business ID: 2446827-3</p>
+
+                    <h2>Attributions</h2>
+
+                    <p><a href="http://www.flickr.com/photos/13522901@N00/6945360545/">6LB6 by splorp (CC-BY-NC-ND)</a></p>
                 </div>
-
-                <h2>Contact</h2>
-
-                <p><a href="mailto:info@koodilehto.fi">info@koodilehto.fi</a></p>
-                <p>Phone: +358 40 4619296</p>
-                <p>Business ID: 2446827-3</p>
-
-                <h2>Attributions</h2>
-
-                <p><a href="http://www.flickr.com/photos/13522901@N00/6945360545/">6LB6 by splorp (CC-BY-NC-ND)</a></p>
             </div>
         );
     }
