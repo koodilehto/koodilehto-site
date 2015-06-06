@@ -1328,17 +1328,11 @@ input[type="date"], .input {
 .front-arrow:after {
   content: "\25BC"; }
 
-.figure {
-  width: 100%;
-  text-align: center; }
+.video-container {
+  margin-bottom: 2vw; }
 
-.figure img {
-  width: 50%; }
-
-.center img {
-  position: inherit;
-  display: block;
-  margin: 0 auto; }
+.video-container iframe {
+  width: 100%; }
 
 .members {
   -webkit-box-orient: horizontal;
