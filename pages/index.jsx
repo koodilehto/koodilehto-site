@@ -1,5 +1,9 @@
 var React = require('react');
+var Scroll = require('react-scroll');
 var Members = require('../components/Members.jsx');
+
+var Link = Scroll.Link;
+var Element = Scroll.Element;
 
 module.exports = React.createClass({
     render: function() {
@@ -14,9 +18,11 @@ module.exports = React.createClass({
                         {/*<a href='blog' className='btn btn--inverted'>Read the Blog</a>*/}
                         <a href='https://github.com/koodilehto' className='btn btn--inverted'>View on GitHub</a>
                     </div>
-                    <div className='front-arrow' />
+                    <p className='front-arrow' >
+                        <Link to='content' spy={true} smooth={true} offset={50} duration={500}>&#x25BC;</Link>
+                    </p>
                 </div>
-                <div className='post__content' dangerouslySetInnerHTML={{__html: require('./index.md').content}} />
+                <Element name='content' className='post__content' dangerouslySetInnerHTML={{__html: require('./index.md').content}} />
                 <div className='post__content'>
                     <h2>Members</h2>
 
@@ -34,5 +40,5 @@ module.exports = React.createClass({
                 </div>
             </div>
         );
-    }
+    },
 });

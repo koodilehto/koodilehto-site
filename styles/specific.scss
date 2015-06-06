@@ -10,13 +10,10 @@
     background-position-x: 50%;
 }
 
-.front-arrow {
+.front-arrow a {
+    cursor: hand;
     padding-top: 4vw;
     color: rgba(255, 255, 255, 0.4);
-}
-
-.front-arrow:after {
-    content: "\25BC";
 }
 
 .video-container {

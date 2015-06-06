@@ -14,7 +14,8 @@
     "antwar-highlight-plugin": "antwarjs/highlight-plugin",
     "antwar-prevnext-plugin": "antwarjs/prevnext-plugin",
     "antwar-rss-plugin": "antwarjs/rss-plugin",
-    "highlight.js": "^8.6.0"
+    "highlight.js": "^8.6.0",
+    "react-scroll": "^0.18.0"
   },
   "devDependencies": {},
   "repository": {
