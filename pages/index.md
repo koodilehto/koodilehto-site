@@ -22,7 +22,9 @@ Päätökset.fi provides access to decisions made at Jyväskylä municipality in
 
 ### [Elovalo](http://elovalo.koodilehto.fi/)
 
-<div class="center figure"><img alt="Elovalo led cube in development" src="images/elovalo2.jpg" /><p class="teaser">Elovalo, a led cube and pedestal</p></div>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIwVZDG_i2M" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Elovalo was a joint venture between [Hacklab Jkl](http://hacklabjkl.org/), [IhmeMedia](http://www.ihmemedia.fi/) and Koodilehto. The three cubes produced during the project have effective resolution of 512 voxels and are controllable using C and JavaScript. Our graphics controller is based on AVR ATMega328 and is quite minimal yet effective.
 

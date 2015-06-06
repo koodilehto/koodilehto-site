@@ -19,20 +19,12 @@
     content: "\25BC";
 }
 
-.figure {
+.video-container {
+    margin-bottom: 2vw;
+}
+
+.video-container iframe {
     width: 100%;
-
-    text-align: center;
-}
-
-.figure img {
-    width: 50%;
-}
-
-.center img {
-    position: inherit;
-    display: block;
-    margin: 0 auto;
 }
 
 .members {
