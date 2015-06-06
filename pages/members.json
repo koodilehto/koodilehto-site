@@ -1,0 +1,57 @@
+[
+    {
+        "url": "https://github.com/epeli",
+        "image": "images/professionals/epeli.jpg",
+        "nick": "Epeli"
+    },
+    {
+        "url": "https://twitter.com/maakuth",
+        "image": "images/professionals/maakuth.jpg",
+        "nick": "Maakuth"
+    },
+    {
+        "url": "http://blog.deggis.iki.fi",
+        "image": "images/professionals/deggis.png",
+        "nick": "Deggis"
+    },
+    {
+        "url": "https://twitter.com/eladith",
+        "image": "images/professionals/eladith.png",
+        "nick": "Eladith"
+    },
+    {
+        "url": "https://twitter.com/zouppen",
+        "image": "images/professionals/joell.jpg",
+        "nick": "Zouppen"
+    },
+    {
+        "url": "http://tjjr.fi",
+        "image": "images/professionals/tuomasjjrasanen.png",
+        "nick": "tuomasjjrasanen"
+    },
+    {
+        "url": "https://github.com/bebraw",
+        "image": "https://www.gravatar.com/avatar/b26ec3c2769168c2cbc64cc3df9cdd9c?s=200",
+        "nick": "bebraw"
+    },
+    {
+        "url": "http://cornix.info/",
+        "image": "images/professionals/jouni_potila_3.jpg",
+        "nick": "cornix"
+    },
+    {
+        "url": "https://twitter.com/TuomoSipola",
+        "image": "images/professionals/tuomo_sipola_20120803.png",
+        "nick": "zipola"
+    },
+    {
+        "url": "http://alexhanh.com",
+        "image": "http://www.gravatar.com/avatar/8a31cdd4db37fa32b99442ed071dd72c?s=200",
+        "nick": "alexhanh"
+    },
+    {
+        "url": "http://www.linkedin.com/in/airzero",
+        "image": "images/professionals/airzero.jpg",
+        "nick": "airzero"
+    }
+]

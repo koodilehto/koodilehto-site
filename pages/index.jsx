@@ -1,8 +1,7 @@
 var React = require('react');
+var Members = require('../components/Members.jsx');
 
-var Index = React.createClass({
-    displayName: 'Index',
-
+module.exports = React.createClass({
     render: function() {
         var styles = {
             frontHeader: {
@@ -38,41 +37,7 @@ var Index = React.createClass({
                 <div className='post__content'>
                     <h2>Members</h2>
 
-                    <div className="members">
-                        <a href="https://github.com/epeli" className="member">
-                            <img src="images/professionals/epeli.jpg" alt="Epeli" />
-                        </a>
-                        <a href="https://twitter.com/maakuth" className="member">
-                            <img src="images/professionals/maakuth.jpg" alt="Maakuth" />
-                        </a>
-                        <a href="http://blog.deggis.iki.fi" className="member">
-                            <img src="images/professionals/deggis.png" alt="Deggis" />
-                        </a>
-                        <a href="https://twitter.com/eladith" className="member">
-                            <img src="images/professionals/eladith.png" alt="Eladith" />
-                        </a>
-                        <a href="https://twitter.com/zouppen" className="member">
-                            <img src="images/professionals/joell.jpg" alt="Zouppen" />
-                        </a>
-                        <a href="http://tjjr.fi" className="member">
-                            <img src="images/professionals/tuomasjjrasanen.png" alt="tuomasjjrasanen" />
-                        </a>
-                        <a href="https://github.com/bebraw" className="member">
-                            <img src="https://www.gravatar.com/avatar/b26ec3c2769168c2cbc64cc3df9cdd9c?s=200" alt="bebraw" />
-                        </a>
-                        <a href="http://cornix.info/" className="member">
-                            <img src="/images/professionals/jouni_potila_3.jpg" alt="cornix" />
-                        </a>
-                        <a href="https://twitter.com/TuomoSipola" className="member">
-                            <img src="/images/professionals/tuomo_sipola_20120803.png" alt="zipola" />
-                        </a>
-                        <a href="http://alexhanh.com" className="member">
-                            <img src="http://www.gravatar.com/avatar/8a31cdd4db37fa32b99442ed071dd72c?s=200" alt="alexhanh" />
-                        </a>
-                        <a href="http://www.linkedin.com/in/airzero" className="member">
-                            <img src="/images/professionals/airzero.jpg" alt="airzero" />
-                        </a>
-                    </div>
+                    <Members data={require('./members.json')} />
                 </div>
 
                 <h2>Contact</h2>
@@ -88,6 +53,3 @@ var Index = React.createClass({
         );
     }
 });
-
-module.exports = Index;
-
