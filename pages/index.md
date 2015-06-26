@@ -29,15 +29,3 @@ Päätökset.fi provides access to decisions made at Jyväskylä municipality in
 Elovalo was a joint venture between [Hacklab Jkl](http://hacklabjkl.org/), [IhmeMedia](http://www.ihmemedia.fi/) and Koodilehto. The three cubes produced during the project have effective resolution of 512 voxels and are controllable using C and JavaScript. Our graphics controller is based on AVR ATMega328 and is quite minimal yet effective.
 
 The project is a good example of collaboration between local organizations. It showcases our expertise in embedded development and 3D graphics. One instance of this latter was [Blender](https://www.blender.org/) based simulator we implemented and then used to visualize our effects before actual hardware was ready. In addition a JavaScript based IDE was implemented.
-
-### [Antwar](https://antwarjs.github.io/)
-
-<img class='inline-img' alt="Kryptoradio" src="images/antwar.jpg" />
-
-This site has been built on top of [Antwar](https://antwarjs.github.io/), a static site generator developed on top of Webpack and React. It is based on [Brad Denver](http://braddenver.com/)'s pioneering work and has been taken much further than the initial concept. [Andreas Eldh](http://eldh.co/) in particular has helped to push it further.
-
-### [SurviveJS - Webpack and React](http://survivejs.com/)
-
-<img class='inline-img' alt="Kryptoradio" src="images/survivejs.jpg" />
-
-SurviveJS - Webpack and React is an ebook aimed towards developers interested in keeping their frontend fu up to date. These two technologies represent one of the biggest steps forward. The ebook helps you to get ahead of the competition.
