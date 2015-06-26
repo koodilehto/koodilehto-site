@@ -739,15 +739,15 @@ main {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: -webkit-linear-gradient(bottom, #fff, rgba(255, 255, 255, 0));
-  background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(bottom, #fff 0%, #fff 35%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, #fff 0%, #fff 35%, rgba(255, 255, 255, 0) 100%);
   z-index: 5;
   width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 27px;
+  padding-top: 54px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
   @media only screen and (max-width: 549px) {
@@ -788,7 +788,7 @@ main {
 
 .nav__link {
   display: inline-block;
-  padding: 13.5px 27px;
+  padding: 6.75px 27px;
   -webkit-transition: color cubic-bezier(.23, 1, .32, 1) 0.3s;
           transition: color cubic-bezier(.23, 1, .32, 1) 0.3s;
   font-size: 15px;
@@ -916,7 +916,7 @@ main {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-top: 27px; } }
+      margin-top: 13.5px; } }
   @media only screen and (max-width: 550px) {
     .docs-nav {
       -webkit-box-orient: vertical;
@@ -926,12 +926,24 @@ main {
               flex-direction: column; } }
 
 .docs-nav--header {
-  margin-bottom: 13.5px; }
+  margin-bottom: 0; }
 
 .docs-nav__link {
   font-size: 15px;
   font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  margin-right: 27px; }
+  margin-right: 27px;
+  margin-bottom: 0.3em;
+  line-height: 1.5; }
+
+.docs-nav__wrapper--push-down {
+  margin-top: 100vh; }
+  .docs-nav__wrapper--push-down + .header-image + .post__heading + .post__content {
+    margin-top: 0; }
+  @media only screen and (min-width: 1150px) {
+    .docs-nav__wrapper--push-down {
+      position: absolute; }
+      .docs-nav__wrapper--push-down + .header-image + .post__heading + .post__content {
+        margin-top: 100vh; } }
 
 .btn {
   font-family: "Avenir Next", "Helvetica Neue", sans-serif;
@@ -1037,6 +1049,10 @@ main {
 .header-image + .post__heading + .post__content {
   margin-top: 100vh;
   padding-top: 54px; }
+
+/* given 100vw doesn't take scrollbar in count maximum width needs to be clamped */
+.header-image, .post__heading {
+  max-width: 100%; }
 
 .post__author, .post__moment {
   margin-bottom: 27px; }
